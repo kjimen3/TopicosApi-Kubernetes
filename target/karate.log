@@ -1,0 +1,621 @@
+17:44:54.182 [Test worker] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:44:59.155 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+17:44:59.840 [Test worker] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/topicos
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:44:59.885 [Test worker] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 509 milliseconds for url: http://localhost:8080/topicos
+17:44:59.886 [Test worker] ERROR com.intuit.karate - classpath:karate/test_api.feature:5
+When method get
+http call failed after 509 milliseconds for url: http://localhost:8080/topicos
+classpath:karate/test_api.feature:5
+17:44:59.950 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+17:45:00.233 [Test worker] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/topicos
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 205
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":{"nombre":"Usuario","correoElectronico":"usuario@example.com"},"curso":"Curso Ejemplo"}
+
+17:45:00.257 [Test worker] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 36 milliseconds for url: http://localhost:8080/topicos
+17:45:00.258 [Test worker] ERROR com.intuit.karate - classpath:karate/test_api.feature:11
+When method post
+http call failed after 36 milliseconds for url: http://localhost:8080/topicos
+classpath:karate/test_api.feature:11
+17:45:00.293 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+17:45:00.307 [Test worker] DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:8080/topicos
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"id":28,"titulo":"Topico actualizado nuevamente"}
+
+17:45:00.311 [Test worker] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 7 milliseconds for url: http://localhost:8080/topicos
+17:45:00.313 [Test worker] ERROR com.intuit.karate - classpath:karate/test_api.feature:17
+When method put
+http call failed after 7 milliseconds for url: http://localhost:8080/topicos
+classpath:karate/test_api.feature:17
+17:45:01.649 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-posthog.html" found in template karate-feature.html, line 13, col 15. Please use the complete syntax of fragment expressions instead ("~{karate-posthog.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+17:45:01.919 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-feature.html, line 28, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+17:45:02.084 [Test worker] WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 71, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+17:45:02.085 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 71, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+17:45:02.352 [Test worker] WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 71, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+17:45:02.353 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 71, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+17:45:02.432 [Test worker] WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 71, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+17:45:02.433 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 71, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+17:45:02.705 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-tags.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-tags.html, line 26, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+17:45:02.806 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-summary.html] Deprecated unwrapped fragment expression "karate-posthog.html" found in template karate-summary.html, line 13, col 15. Please use the complete syntax of fragment expressions instead ("~{karate-posthog.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+17:45:02.828 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-summary.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-summary.html, line 27, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+17:47:00.951 [Test worker] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:47:05.409 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+17:47:06.029 [Test worker] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/topicos
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:47:06.095 [Test worker] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 528 milliseconds for url: http://localhost:8080/topicos
+17:47:06.096 [Test worker] ERROR com.intuit.karate - classpath:karate/test_api.feature:5
+When method get
+http call failed after 528 milliseconds for url: http://localhost:8080/topicos
+classpath:karate/test_api.feature:5
+17:47:06.156 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+17:47:06.411 [Test worker] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/topicos
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 205
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":{"nombre":"Usuario","correoElectronico":"usuario@example.com"},"curso":"Curso Ejemplo"}
+
+17:47:06.416 [Test worker] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 22 milliseconds for url: http://localhost:8080/topicos
+17:47:06.417 [Test worker] ERROR com.intuit.karate - classpath:karate/test_api.feature:11
+When method post
+http call failed after 22 milliseconds for url: http://localhost:8080/topicos
+classpath:karate/test_api.feature:11
+17:47:06.443 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+17:47:06.457 [Test worker] DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:8080/topicos
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"id":28,"titulo":"Topico actualizado nuevamente"}
+
+17:47:06.487 [Test worker] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 35 milliseconds for url: http://localhost:8080/topicos
+17:47:06.490 [Test worker] ERROR com.intuit.karate - classpath:karate/test_api.feature:17
+When method put
+http call failed after 35 milliseconds for url: http://localhost:8080/topicos
+classpath:karate/test_api.feature:17
+17:47:07.877 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-posthog.html" found in template karate-feature.html, line 13, col 15. Please use the complete syntax of fragment expressions instead ("~{karate-posthog.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+17:47:08.124 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-feature.html, line 28, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+17:47:08.292 [Test worker] WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 71, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+17:47:08.293 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 71, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+17:47:08.629 [Test worker] WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 71, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+17:47:08.630 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 71, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+17:47:08.730 [Test worker] WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 71, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+17:47:08.730 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 71, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+17:47:09.005 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-tags.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-tags.html, line 26, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+17:47:09.104 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-summary.html] Deprecated unwrapped fragment expression "karate-posthog.html" found in template karate-summary.html, line 13, col 15. Please use the complete syntax of fragment expressions instead ("~{karate-posthog.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+17:47:09.132 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-summary.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-summary.html, line 27, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+17:51:40.037 [Test worker] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:51:44.900 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+17:51:45.571 [Test worker] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/topicos
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:51:45.664 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 87
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Sun, 28 Jul 2024 22:51:45 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+[{"id":10,"titulo":null,"mensaje":"Hi, how are you","fecha_de_creacion":"16/04/2024","status":"NUEVO","usuario":"Nombre='jjsana Mejia', Correo electronico='mejia-zapata@hotmail.com'}","curso":"Yes, All you, about your happined"},{"id":12,"titulo":"Hi, good day","mensaje":"Hi, how are you","fecha_de_creacion":"16/04/2024","status":"NUEVO","usuario":"Nombre='jujsana Mejia', Correo electronico='mejia-zapata@hotmail.com'}","curso":"Yes, All you, about your happined"},{"id":13,"titulo":"Pruebas E2E","mensaje":"¿Estoy aprendiendo. Hola, ¿Cómo puedo realizar pruebas E2E?","fecha_de_creacion":"11/04/2024","status":"LEIDO","usuario":"Nombre='Julia Morales', Correo electronico='julia-morales@hotmail.com'}","curso":"Quiero estar emprendiendo sobre pipelines"},{"id":3,"titulo":"SQL3","mensaje":"Todo sobre SQL","fecha_de_creacion":"2024-09-05","status":"RESPONDIDO","usuario":"Nombre='Camilo Guti', Correo electronico='cami1@gmail.com'}","curso":"Curso sobre todo SQL"},{"id":5,"titulo":"Ya soy el null update","mensaje":"Debes tener permisos","fecha_de_creacion":"11/03/2024","status":"NUEVO","usuario":"Nombre='Karen Jimnez', Correo electronico='kjimen33@outlook.es'}","curso":"Aprendiendo sobre Pipelines"},{"id":18,"titulo":"Cambiando para probar en Jacoco","mensaje":"Pruebas de aceptación para jacoco","fecha_de_creacion":"19/07/2024","status":"NUEVO","usuario":"Nombre='Karen Jimenez', Correo electronico='kjimen2233@outlook.es'}","curso":"Aprendiendo sobre Jacoco"},{"id":19,"titulo":"Prueba para Jacoco","mensaje":"Pruebas de aceptación para jacoco","fecha_de_creacion":"19/07/2024","status":"NUEVO","usuario":"Nombre='Karen Jimenez', Correo electronico='kjimen2233@outlook.es'}","curso":"Aprendiendo sobre Jacoco"},{"id":20,"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":"Nombre='Usuario', Correo electronico='usuario@example.com'}","curso":"Curso Ejemplo"},{"id":21,"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":"Nombre='Usuario', Correo electronico='usuario@example.com'}","curso":"Curso Ejemplo"},{"id":22,"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":"Nombre='Usuario', Correo electronico='usuario@example.com'}","curso":"Curso Ejemplo"},{"id":23,"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":"Nombre='Usuario', Correo electronico='usuario@example.com'}","curso":"Curso Ejemplo"},{"id":24,"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":"Nombre='Usuario', Correo electronico='usuario@example.com'}","curso":"Curso Ejemplo"},{"id":25,"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":"Nombre='Usuario', Correo electronico='usuario@example.com'}","curso":"Curso Ejemplo"},{"id":26,"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":"Nombre='Usuario', Correo electronico='usuario@example.com'}","curso":"Curso Ejemplo"},{"id":2,"titulo":"Topico actualizado nuevamente","mensaje":"Yo sobre SQL","fecha_de_creacion":"2024-08-01","status":"LEIDO","usuario":"Nombre='Cami Zapata', Correo electronico='cami13@gmail.com'}","curso":"Curso sobre yo con SQL"},{"id":27,"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":"Nombre='Usuario', Correo electronico='usuario@example.com'}","curso":"Curso Ejemplo"},{"id":29,"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":"Nombre='Usuario', Correo electronico='usuario@example.com'}","curso":"Curso Ejemplo"},{"id":28,"titulo":"Topico actualizado nuevamente","mensaje":"Pruebas de aceptación para jacoco","fecha_de_creacion":"19/07/2024","status":"NUEVO","usuario":"Nombre='Karen Jimenez', Correo electronico='kjimen2233@outlook.es'}","curso":"Aprendiendo sobre Jacoco"},{"id":30,"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":"Nombre='Usuario', Correo electronico='usuario@example.com'}","curso":"Curso Ejemplo"},{"id":31,"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":"Nombre='Usuario', Correo electronico='usuario@example.com'}","curso":"Curso Ejemplo"},{"id":32,"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":"Nombre='Usuario', Correo electronico='usuario@example.com'}","curso":"Curso Ejemplo"},{"id":33,"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":"Nombre='Usuario', Correo electronico='usuario@example.com'}","curso":"Curso Ejemplo"},{"id":34,"titulo":"Prueba para Jacoco","mensaje":"Pruebas de aceptación para jacoco","fecha_de_creacion":"19/07/2024","status":"NUEVO","usuario":"Nombre='Karen Jimenez', Correo electronico='kjimen2233@outlook.es'}","curso":"Aprendiendo sobre Jacoco"}]
+
+17:51:45.781 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+17:51:45.936 [Test worker] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/topicos
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 205
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":{"nombre":"Usuario","correoElectronico":"usuario@example.com"},"curso":"Curso Ejemplo"}
+
+17:51:46.210 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 272
+1 < 201
+1 < Location: http://localhost:8081/topicos/35
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Sun, 28 Jul 2024 22:51:45 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":35,"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":{"nombre":"Usuario","correoElectronico":"usuario@example.com"},"curso":"Curso Ejemplo"}
+
+17:51:46.241 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+17:51:46.251 [Test worker] DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:8081/topicos
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"id":28,"titulo":"Topico actualizado nuevamente"}
+
+17:51:46.345 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 92
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Sun, 28 Jul 2024 22:51:45 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":28,"titulo":"Topico actualizado nuevamente","mensaje":"Pruebas de aceptación para jacoco","fecha_de_creacion":"19/07/2024","status":"NUEVO","usuario":{"nombre":"Karen Jimenez","correoElectronico":"kjimen2233@outlook.es"},"curso":"Aprendiendo sobre Jacoco"}
+
+17:51:47.777 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-posthog.html" found in template karate-feature.html, line 13, col 15. Please use the complete syntax of fragment expressions instead ("~{karate-posthog.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+17:51:48.011 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-feature.html, line 28, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+17:51:48.178 [Test worker] WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 71, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+17:51:48.179 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 71, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+17:51:48.442 [Test worker] WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 71, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+17:51:48.443 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 71, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+17:51:48.552 [Test worker] WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 71, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+17:51:48.553 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 71, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+17:51:48.961 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-tags.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-tags.html, line 26, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+17:51:49.046 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-summary.html] Deprecated unwrapped fragment expression "karate-posthog.html" found in template karate-summary.html, line 13, col 15. Please use the complete syntax of fragment expressions instead ("~{karate-posthog.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+17:51:49.068 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-summary.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-summary.html, line 27, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+21:22:27.914 [Test worker] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:22:35.181 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+21:22:35.834 [Test worker] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8081/topicos
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:22:35.893 [Test worker] ERROR com.intuit.karate - org.apache.http.NoHttpResponseException: The target server failed to respond, http call failed after 580 milliseconds for url: http://localhost:8081/topicos
+21:22:35.895 [Test worker] ERROR com.intuit.karate - classpath:karate/test_api.feature:5
+When method get
+http call failed after 580 milliseconds for url: http://localhost:8081/topicos
+classpath:karate/test_api.feature:5
+21:22:35.972 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+21:22:36.382 [Test worker] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8081/topicos
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 205
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":{"nombre":"Usuario","correoElectronico":"usuario@example.com"},"curso":"Curso Ejemplo"}
+
+21:22:36.392 [Test worker] ERROR com.intuit.karate - org.apache.http.NoHttpResponseException: The target server failed to respond, http call failed after 25 milliseconds for url: http://localhost:8081/topicos
+21:22:36.394 [Test worker] ERROR com.intuit.karate - classpath:karate/test_api.feature:11
+When method post
+http call failed after 25 milliseconds for url: http://localhost:8081/topicos
+classpath:karate/test_api.feature:11
+21:22:36.464 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+21:22:36.502 [Test worker] DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:8081/topicos
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: localhost:8081
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"id":28,"titulo":"Topico actualizado nuevamente"}
+
+21:22:36.524 [Test worker] ERROR com.intuit.karate - org.apache.http.NoHttpResponseException: The target server failed to respond, http call failed after 26 milliseconds for url: http://localhost:8081/topicos
+21:22:36.525 [Test worker] ERROR com.intuit.karate - classpath:karate/test_api.feature:17
+When method put
+http call failed after 26 milliseconds for url: http://localhost:8081/topicos
+classpath:karate/test_api.feature:17
+21:22:38.093 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-posthog.html" found in template karate-feature.html, line 13, col 15. Please use the complete syntax of fragment expressions instead ("~{karate-posthog.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+21:22:38.391 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-feature.html, line 28, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+21:22:38.575 [Test worker] WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 71, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+21:22:38.576 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 71, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+21:22:38.903 [Test worker] WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 71, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+21:22:38.904 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 71, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+21:22:39.036 [Test worker] WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 71, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+21:22:39.037 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 71, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+21:22:39.313 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-tags.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-tags.html, line 26, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+21:22:39.458 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-summary.html] Deprecated unwrapped fragment expression "karate-posthog.html" found in template karate-summary.html, line 13, col 15. Please use the complete syntax of fragment expressions instead ("~{karate-posthog.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+21:22:39.488 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-summary.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-summary.html, line 27, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+21:23:25.553 [Test worker] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:23:31.068 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+21:23:31.975 [Test worker] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/topicos
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:23:32.044 [Test worker] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 769 milliseconds for url: http://localhost:8080/topicos
+21:23:32.046 [Test worker] ERROR com.intuit.karate - classpath:karate/test_api.feature:5
+When method get
+http call failed after 769 milliseconds for url: http://localhost:8080/topicos
+classpath:karate/test_api.feature:5
+21:23:32.143 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+21:23:32.576 [Test worker] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/topicos
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 205
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":{"nombre":"Usuario","correoElectronico":"usuario@example.com"},"curso":"Curso Ejemplo"}
+
+21:23:32.582 [Test worker] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 19 milliseconds for url: http://localhost:8080/topicos
+21:23:32.583 [Test worker] ERROR com.intuit.karate - classpath:karate/test_api.feature:11
+When method post
+http call failed after 19 milliseconds for url: http://localhost:8080/topicos
+classpath:karate/test_api.feature:11
+21:23:32.641 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+21:23:32.663 [Test worker] DEBUG com.intuit.karate - request:
+1 > PUT http://localhost:8080/topicos
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"id":28,"titulo":"Topico actualizado nuevamente"}
+
+21:23:32.691 [Test worker] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information, http call failed after 33 milliseconds for url: http://localhost:8080/topicos
+21:23:32.693 [Test worker] ERROR com.intuit.karate - classpath:karate/test_api.feature:17
+When method put
+http call failed after 33 milliseconds for url: http://localhost:8080/topicos
+classpath:karate/test_api.feature:17
+21:23:34.290 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-posthog.html" found in template karate-feature.html, line 13, col 15. Please use the complete syntax of fragment expressions instead ("~{karate-posthog.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+21:23:34.648 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-feature.html, line 28, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+21:23:34.858 [Test worker] WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 71, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+21:23:34.859 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 71, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+21:23:35.257 [Test worker] WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 71, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+21:23:35.258 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 71, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+21:23:35.366 [Test worker] WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 71, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+21:23:35.368 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 71, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+21:23:35.760 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-tags.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-tags.html, line 26, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+21:23:35.928 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-summary.html] Deprecated unwrapped fragment expression "karate-posthog.html" found in template karate-summary.html, line 13, col 15. Please use the complete syntax of fragment expressions instead ("~{karate-posthog.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+21:23:35.980 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-summary.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-summary.html, line 27, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+21:27:06.957 [Test worker] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:27:12.172 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+21:27:12.376 [Test worker] ERROR com.intuit.karate - classpath:karate/test_api.feature:4
+Given url http://127.0.0.1:60265/topicos
+js failed:
+>>>>
+01: http://127.0.0.1:60265/topicos
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:30 Expected ; but found eof
+http://127.0.0.1:60265/topicos
+                              ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2373)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2292)
+- com.intuit.karate.core.ScenarioEngine.url(ScenarioEngine.java:365)
+
+classpath:karate/test_api.feature:4
+21:27:12.516 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+21:27:12.539 [Test worker] ERROR com.intuit.karate - classpath:karate/test_api.feature:9
+Given url http://127.0.0.1:60265/topicos
+js failed:
+>>>>
+01: http://127.0.0.1:60265/topicos
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:30 Expected ; but found eof
+http://127.0.0.1:60265/topicos
+                              ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2373)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2292)
+- com.intuit.karate.core.ScenarioEngine.url(ScenarioEngine.java:365)
+
+classpath:karate/test_api.feature:9
+21:27:12.604 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+21:27:12.657 [Test worker] ERROR com.intuit.karate - classpath:karate/test_api.feature:15
+Given url http://127.0.0.1:60265/topicos
+js failed:
+>>>>
+01: http://127.0.0.1:60265/topicos
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:30 Expected ; but found eof
+http://127.0.0.1:60265/topicos
+                              ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2373)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2292)
+- com.intuit.karate.core.ScenarioEngine.url(ScenarioEngine.java:365)
+
+classpath:karate/test_api.feature:15
+21:27:14.622 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-posthog.html" found in template karate-feature.html, line 13, col 15. Please use the complete syntax of fragment expressions instead ("~{karate-posthog.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+21:27:15.106 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-feature.html, line 28, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+21:27:15.389 [Test worker] WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 71, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+21:27:15.391 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 71, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+21:27:15.801 [Test worker] WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 71, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+21:27:15.802 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 71, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+21:27:15.948 [Test worker] WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 71, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+21:27:15.949 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 71, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+21:27:16.394 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-tags.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-tags.html, line 26, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+21:27:16.527 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-summary.html] Deprecated unwrapped fragment expression "karate-posthog.html" found in template karate-summary.html, line 13, col 15. Please use the complete syntax of fragment expressions instead ("~{karate-posthog.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+21:27:16.578 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-summary.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-summary.html, line 27, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+10:33:54.927 [Test worker] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:34:00.845 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+10:34:01.054 [Test worker] ERROR com.intuit.karate - classpath:karate/test_api.feature:4
+Given url http://127.0.0.1:60265/topicos
+js failed:
+>>>>
+01: http://127.0.0.1:60265/topicos
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:30 Expected ; but found eof
+http://127.0.0.1:60265/topicos
+                              ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2373)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2292)
+- com.intuit.karate.core.ScenarioEngine.url(ScenarioEngine.java:365)
+
+classpath:karate/test_api.feature:4
+10:34:01.169 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+10:34:01.201 [Test worker] ERROR com.intuit.karate - classpath:karate/test_api.feature:9
+Given url http://127.0.0.1:60265/topicos
+js failed:
+>>>>
+01: http://127.0.0.1:60265/topicos
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:30 Expected ; but found eof
+http://127.0.0.1:60265/topicos
+                              ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2373)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2292)
+- com.intuit.karate.core.ScenarioEngine.url(ScenarioEngine.java:365)
+
+classpath:karate/test_api.feature:9
+10:34:01.256 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+10:34:01.279 [Test worker] ERROR com.intuit.karate - classpath:karate/test_api.feature:15
+Given url http://127.0.0.1:60265/topicos
+js failed:
+>>>>
+01: http://127.0.0.1:60265/topicos
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:30 Expected ; but found eof
+http://127.0.0.1:60265/topicos
+                              ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1344)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2373)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2292)
+- com.intuit.karate.core.ScenarioEngine.url(ScenarioEngine.java:365)
+
+classpath:karate/test_api.feature:15
+10:34:03.142 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-posthog.html" found in template karate-feature.html, line 13, col 15. Please use the complete syntax of fragment expressions instead ("~{karate-posthog.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+10:34:03.480 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-feature.html, line 28, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+10:34:03.714 [Test worker] WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 71, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+10:34:03.715 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 71, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+10:34:03.981 [Test worker] WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 71, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+10:34:03.982 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 71, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+10:34:04.083 [Test worker] WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 71, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+10:34:04.084 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 71, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+10:34:04.592 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-tags.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-tags.html, line 26, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+10:34:04.711 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-summary.html] Deprecated unwrapped fragment expression "karate-posthog.html" found in template karate-summary.html, line 13, col 15. Please use the complete syntax of fragment expressions instead ("~{karate-posthog.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+10:34:04.736 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-summary.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-summary.html, line 27, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+10:43:21.654 [Test worker] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:43:25.955 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+10:43:26.152 [Test worker] ERROR com.intuit.karate - classpath:karate/test_api.feature:4
+Given url baseUrl + '/topicos'
+js failed:
+>>>>
+01: baseUrl + '/topicos'
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "baseUrl" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:karate/test_api.feature:4
+10:43:26.276 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+10:43:26.307 [Test worker] ERROR com.intuit.karate - classpath:karate/test_api.feature:9
+Given url baseUrl + '/topicos'
+js failed:
+>>>>
+01: baseUrl + '/topicos'
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "baseUrl" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:karate/test_api.feature:9
+10:43:26.355 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+10:43:26.371 [Test worker] ERROR com.intuit.karate - classpath:karate/test_api.feature:15
+Given url baseUrl + '/topicos'
+js failed:
+>>>>
+01: baseUrl + '/topicos'
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "baseUrl" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:karate/test_api.feature:15
+10:43:27.763 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-posthog.html" found in template karate-feature.html, line 13, col 15. Please use the complete syntax of fragment expressions instead ("~{karate-posthog.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+10:43:28.028 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-feature.html, line 28, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+10:43:28.177 [Test worker] WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 71, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+10:43:28.178 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 71, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+10:43:28.431 [Test worker] WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 71, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+10:43:28.432 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 71, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+10:43:28.558 [Test worker] WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 71, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+10:43:28.559 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 71, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+10:43:28.900 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-tags.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-tags.html, line 26, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+10:43:28.984 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-summary.html] Deprecated unwrapped fragment expression "karate-posthog.html" found in template karate-summary.html, line 13, col 15. Please use the complete syntax of fragment expressions instead ("~{karate-posthog.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+10:43:29.022 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-summary.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-summary.html, line 27, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+10:43:54.495 [Test worker] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:43:59.152 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+10:43:59.786 [Test worker] DEBUG com.intuit.karate - request:
+1 > GET http://127.0.0.1:60265/topicos
+1 > Host: 127.0.0.1:60265
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:43:59.838 [Test worker] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:60265 [/127.0.0.1] failed: Connection refused: no further information, http call failed after 553 milliseconds for url: http://127.0.0.1:60265/topicos
+10:43:59.839 [Test worker] ERROR com.intuit.karate - classpath:karate/test_api.feature:5
+When method get
+http call failed after 553 milliseconds for url: http://127.0.0.1:60265/topicos
+classpath:karate/test_api.feature:5
+10:43:59.899 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+10:44:00.315 [Test worker] DEBUG com.intuit.karate - request:
+1 > POST http://127.0.0.1:60265/topicos
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 205
+1 > Host: 127.0.0.1:60265
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":{"nombre":"Usuario","correoElectronico":"usuario@example.com"},"curso":"Curso Ejemplo"}
+
+10:44:00.321 [Test worker] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:60265 [/127.0.0.1] failed: Connection refused: no further information, http call failed after 37 milliseconds for url: http://127.0.0.1:60265/topicos
+10:44:00.322 [Test worker] ERROR com.intuit.karate - classpath:karate/test_api.feature:11
+When method post
+http call failed after 37 milliseconds for url: http://127.0.0.1:60265/topicos
+classpath:karate/test_api.feature:11
+10:44:00.361 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+10:44:00.375 [Test worker] DEBUG com.intuit.karate - request:
+1 > PUT http://127.0.0.1:60265/topicos
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: 127.0.0.1:60265
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"id":28,"titulo":"Topico actualizado nuevamente"}
+
+10:44:00.404 [Test worker] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:60265 [/127.0.0.1] failed: Connection refused: no further information, http call failed after 32 milliseconds for url: http://127.0.0.1:60265/topicos
+10:44:00.406 [Test worker] ERROR com.intuit.karate - classpath:karate/test_api.feature:17
+When method put
+http call failed after 32 milliseconds for url: http://127.0.0.1:60265/topicos
+classpath:karate/test_api.feature:17
+10:44:02.041 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-posthog.html" found in template karate-feature.html, line 13, col 15. Please use the complete syntax of fragment expressions instead ("~{karate-posthog.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+10:44:02.335 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-feature.html, line 28, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+10:44:02.518 [Test worker] WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 71, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+10:44:02.519 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 71, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+10:44:02.788 [Test worker] WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 71, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+10:44:02.789 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 71, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+10:44:02.886 [Test worker] WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 71, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+10:44:02.887 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 71, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+10:44:03.156 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-tags.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-tags.html, line 26, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+10:44:03.254 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-summary.html] Deprecated unwrapped fragment expression "karate-posthog.html" found in template karate-summary.html, line 13, col 15. Please use the complete syntax of fragment expressions instead ("~{karate-posthog.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+10:44:03.311 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-summary.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-summary.html, line 27, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+10:44:50.329 [Test worker] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:44:54.794 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+10:44:55.383 [Test worker] DEBUG com.intuit.karate - request:
+1 > GET http://127.0.0.1:60150/topicos
+1 > Host: 127.0.0.1:60150
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:44:55.563 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 173
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 29 Jul 2024 15:44:55 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+[{"id":10,"titulo":null,"mensaje":"Hi, how are you","fecha_de_creacion":"16/04/2024","status":"NUEVO","usuario":"Nombre='jjsana Mejia', Correo electronico='mejia-zapata@hotmail.com'}","curso":"Yes, All you, about your happined"},{"id":12,"titulo":"Hi, good day","mensaje":"Hi, how are you","fecha_de_creacion":"16/04/2024","status":"NUEVO","usuario":"Nombre='jujsana Mejia', Correo electronico='mejia-zapata@hotmail.com'}","curso":"Yes, All you, about your happined"},{"id":13,"titulo":"Pruebas E2E","mensaje":"¿Estoy aprendiendo. Hola, ¿Cómo puedo realizar pruebas E2E?","fecha_de_creacion":"11/04/2024","status":"LEIDO","usuario":"Nombre='Julia Morales', Correo electronico='julia-morales@hotmail.com'}","curso":"Quiero estar emprendiendo sobre pipelines"},{"id":3,"titulo":"SQL3","mensaje":"Todo sobre SQL","fecha_de_creacion":"2024-09-05","status":"RESPONDIDO","usuario":"Nombre='Camilo Guti', Correo electronico='cami1@gmail.com'}","curso":"Curso sobre todo SQL"},{"id":5,"titulo":"Ya soy el null update","mensaje":"Debes tener permisos","fecha_de_creacion":"11/03/2024","status":"NUEVO","usuario":"Nombre='Karen Jimnez', Correo electronico='kjimen33@outlook.es'}","curso":"Aprendiendo sobre Pipelines"},{"id":18,"titulo":"Cambiando para probar en Jacoco","mensaje":"Pruebas de aceptación para jacoco","fecha_de_creacion":"19/07/2024","status":"NUEVO","usuario":"Nombre='Karen Jimenez', Correo electronico='kjimen2233@outlook.es'}","curso":"Aprendiendo sobre Jacoco"},{"id":19,"titulo":"Prueba para Jacoco","mensaje":"Pruebas de aceptación para jacoco","fecha_de_creacion":"19/07/2024","status":"NUEVO","usuario":"Nombre='Karen Jimenez', Correo electronico='kjimen2233@outlook.es'}","curso":"Aprendiendo sobre Jacoco"},{"id":20,"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":"Nombre='Usuario', Correo electronico='usuario@example.com'}","curso":"Curso Ejemplo"},{"id":21,"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":"Nombre='Usuario', Correo electronico='usuario@example.com'}","curso":"Curso Ejemplo"},{"id":22,"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":"Nombre='Usuario', Correo electronico='usuario@example.com'}","curso":"Curso Ejemplo"},{"id":23,"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":"Nombre='Usuario', Correo electronico='usuario@example.com'}","curso":"Curso Ejemplo"},{"id":24,"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":"Nombre='Usuario', Correo electronico='usuario@example.com'}","curso":"Curso Ejemplo"},{"id":25,"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":"Nombre='Usuario', Correo electronico='usuario@example.com'}","curso":"Curso Ejemplo"},{"id":26,"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":"Nombre='Usuario', Correo electronico='usuario@example.com'}","curso":"Curso Ejemplo"},{"id":2,"titulo":"Topico actualizado nuevamente","mensaje":"Yo sobre SQL","fecha_de_creacion":"2024-08-01","status":"LEIDO","usuario":"Nombre='Cami Zapata', Correo electronico='cami13@gmail.com'}","curso":"Curso sobre yo con SQL"},{"id":27,"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":"Nombre='Usuario', Correo electronico='usuario@example.com'}","curso":"Curso Ejemplo"},{"id":29,"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":"Nombre='Usuario', Correo electronico='usuario@example.com'}","curso":"Curso Ejemplo"},{"id":28,"titulo":"Topico actualizado nuevamente","mensaje":"Pruebas de aceptación para jacoco","fecha_de_creacion":"19/07/2024","status":"NUEVO","usuario":"Nombre='Karen Jimenez', Correo electronico='kjimen2233@outlook.es'}","curso":"Aprendiendo sobre Jacoco"},{"id":30,"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":"Nombre='Usuario', Correo electronico='usuario@example.com'}","curso":"Curso Ejemplo"},{"id":31,"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":"Nombre='Usuario', Correo electronico='usuario@example.com'}","curso":"Curso Ejemplo"},{"id":32,"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":"Nombre='Usuario', Correo electronico='usuario@example.com'}","curso":"Curso Ejemplo"},{"id":33,"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":"Nombre='Usuario', Correo electronico='usuario@example.com'}","curso":"Curso Ejemplo"},{"id":34,"titulo":"Prueba para Jacoco","mensaje":"Pruebas de aceptación para jacoco","fecha_de_creacion":"19/07/2024","status":"NUEVO","usuario":"Nombre='Karen Jimenez', Correo electronico='kjimen2233@outlook.es'}","curso":"Aprendiendo sobre Jacoco"},{"id":35,"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":"Nombre='Usuario', Correo electronico='usuario@example.com'}","curso":"Curso Ejemplo"}]
+
+10:44:55.703 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+10:44:55.881 [Test worker] DEBUG com.intuit.karate - request:
+1 > POST http://127.0.0.1:60150/topicos
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 205
+1 > Host: 127.0.0.1:60150
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":{"nombre":"Usuario","correoElectronico":"usuario@example.com"},"curso":"Curso Ejemplo"}
+
+10:44:57.678 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 1794
+1 < 201
+1 < Location: http://127.0.0.1:60150/topicos/36
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 29 Jul 2024 15:44:57 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":36,"titulo":"Nuevo Tópico","mensaje":"Mensaje del tópico","fecha_de_creacion":"2024-01-01","status":"NUEVO","usuario":{"nombre":"Usuario","correoElectronico":"usuario@example.com"},"curso":"Curso Ejemplo"}
+
+10:44:57.708 [Test worker] INFO  com.intuit.karate - karate.env system property was: null 
+10:44:57.718 [Test worker] DEBUG com.intuit.karate - request:
+1 > PUT http://127.0.0.1:60150/topicos
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: 127.0.0.1:60150
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"id":28,"titulo":"Topico actualizado nuevamente"}
+
+10:44:58.008 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 288
+1 < 200
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Date: Mon, 29 Jul 2024 15:44:57 GMT
+1 < Keep-Alive: timeout=60
+1 < Connection: keep-alive
+{"id":28,"titulo":"Topico actualizado nuevamente","mensaje":"Pruebas de aceptación para jacoco","fecha_de_creacion":"19/07/2024","status":"NUEVO","usuario":{"nombre":"Karen Jimenez","correoElectronico":"kjimen2233@outlook.es"},"curso":"Aprendiendo sobre Jacoco"}
+
+10:44:59.336 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-posthog.html" found in template karate-feature.html, line 13, col 15. Please use the complete syntax of fragment expressions instead ("~{karate-posthog.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+10:44:59.603 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-feature.html, line 28, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+10:44:59.780 [Test worker] WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 71, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+10:44:59.781 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 71, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+10:45:00.042 [Test worker] WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 71, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+10:45:00.043 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 71, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+10:45:00.175 [Test worker] WARN  o.t.s.p.StandardIncludeTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated attribute {th:include,data-th-include} found in template karate-feature.html, line 71, col 16. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+10:45:00.176 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-feature.html] Deprecated unwrapped fragment expression "karate-step.html" found in template karate-feature.html, line 71, col 16. Please use the complete syntax of fragment expressions instead ("~{karate-step.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+10:45:00.470 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-tags.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-tags.html, line 26, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+10:45:00.549 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-summary.html] Deprecated unwrapped fragment expression "karate-posthog.html" found in template karate-summary.html, line 13, col 15. Please use the complete syntax of fragment expressions instead ("~{karate-posthog.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+10:45:00.563 [Test worker] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][Test worker][karate-summary.html] Deprecated unwrapped fragment expression "karate-leftnav.html" found in template karate-summary.html, line 27, col 14. Please use the complete syntax of fragment expressions instead ("~{karate-leftnav.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.

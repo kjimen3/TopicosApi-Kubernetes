@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: topicosapi-service
+spec:
+  selector:
+    app: topicosapi
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 8080
+    - name: jacoco
+      protocol: TCP
+      port: 6300
+      targetPort: 6300
+  type: NodePort
+
+
+
+
+

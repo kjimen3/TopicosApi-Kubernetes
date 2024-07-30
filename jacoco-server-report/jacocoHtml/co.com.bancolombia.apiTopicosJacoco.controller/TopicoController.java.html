@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TopicoController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">TopicosApi</a> &gt; <a href="index.source.html" class="el_package">co.com.bancolombia.apiTopicosJacoco.controller</a> &gt; <span class="el_source">TopicoController.java</span></div><h1>TopicoController.java</h1><pre class="source lang-java linenums">package co.com.bancolombia.apiTopicosJacoco.controller;
+
+
+import co.com.bancolombia.apiTopicosJacoco.domain.topico.*;
+import co.com.bancolombia.apiTopicosJacoco.domain.usuario.DatosUsuario;
+import jakarta.transaction.Transactional;
+import jakarta.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.util.UriComponentsBuilder;
+
+
+import java.net.URI;
+import java.util.List;
+import java.util.Optional;
+
+@RestController
+@RequestMapping(&quot;/topicos&quot;)
+<span class="nc" id="L20">public class TopicoController {</span>
+
+    @Autowired
+    private TopicoRepository topicoRepository;
+
+    @PostMapping
+    public ResponseEntity&lt;DatosRespuestaTopico&gt; registrarTopico(@RequestBody @Valid DatosRegistroTopico datosRegistroTopico, UriComponentsBuilder uriComponentsBuilder){
+<span class="nc" id="L27">        Topico topico = topicoRepository.save(new Topico(datosRegistroTopico));</span>
+<span class="nc" id="L28">        DatosRespuestaTopico datosRespuestaTopico = new DatosRespuestaTopico(topico.getId(), topico.getTitulo(), topico.getMensaje(), topico.getFecha_de_creacion(),</span>
+<span class="nc" id="L29">                topico.getStatus().toString(), new DatosUsuario(topico.getUsuario().getNombre(), topico.getUsuario().getCorreoElectronico()), topico.getCurso());</span>
+<span class="nc" id="L30">        URI url = uriComponentsBuilder.path(&quot;/topicos/{id}&quot;).buildAndExpand(topico.getId()).toUri();</span>
+<span class="nc" id="L31">        return ResponseEntity.created(url).body(datosRespuestaTopico);</span>
+    }
+
+    @GetMapping
+    public List&lt;DatosListadoTopico&gt; listadoTopicos() {
+<span class="nc" id="L36">        return topicoRepository.findAll().stream().map(DatosListadoTopico::new).toList();</span>
+    }
+
+    @GetMapping(&quot;/{id}&quot;)
+    public ResponseEntity&lt;Topico&gt; buscarTopicoPorId(@PathVariable Long id) {
+<span class="nc" id="L41">        Optional&lt;Topico&gt; topicoOpt = topicoRepository.findById(id);</span>
+<span class="nc" id="L42">        return topicoOpt.map(ResponseEntity::ok)</span>
+<span class="nc" id="L43">                .orElseGet(() -&gt; ResponseEntity.notFound().build());</span>
+    }
+
+    @PutMapping
+    @Transactional
+    public ResponseEntity actualizarTopico(@RequestBody @Valid DatosActualizarTopico datosActualizarTopico) {
+<span class="nc" id="L49">        Topico topico = topicoRepository.getReferenceById(datosActualizarTopico.id());</span>
+<span class="nc" id="L50">        topico.actualizarDatos(datosActualizarTopico);</span>
+<span class="nc" id="L51">        return ResponseEntity.ok(new DatosRespuestaTopico(topico.getId(), topico.getTitulo(), topico.getMensaje(), topico.getFecha_de_creacion(),</span>
+<span class="nc" id="L52">                topico.getStatus().toString(), new DatosUsuario(topico.getUsuario().getNombre(), topico.getUsuario().getCorreoElectronico()), topico.getCurso()));</span>
+    }
+
+    @DeleteMapping(&quot;/{id}&quot;)
+    @Transactional
+    public ResponseEntity&lt;Void&gt; eliminarTopico(@PathVariable Long id) {
+<span class="nc" id="L58">        Optional&lt;Topico&gt; optionalTopico = topicoRepository.findById(id);</span>
+<span class="nc bnc" id="L59" title="All 2 branches missed.">        if (optionalTopico.isPresent()) {</span>
+<span class="nc" id="L60">            topicoRepository.delete(optionalTopico.get());</span>
+<span class="nc" id="L61">            return ResponseEntity.ok().build();</span>
+        } else {
+<span class="nc" id="L63">            return ResponseEntity.notFound().build();</span>
+        }
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jacoco-report-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jacoco-report
+  template:
+    metadata:
+      labels:
+        app: jacoco-report
+    spec:
+      containers:
+        - name: jacoco-report
+          image: karjimen/jacoco-report-server:latest
+          ports:
+            - containerPort: 80
+

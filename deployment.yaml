@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: topicosapi-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: topicosapi
+  template:
+    metadata:
+      labels:
+        app: topicosapi
+    spec:
+      containers:
+        - name: topicosapi
+          image: karjimen/topicosapi-jacoco:latest
+          ports:
+            - containerPort: 8080
+            - containerPort: 6300
+          env:
+            - name: DB_HOST
+              value: "host.docker.internal"
+            - name: DB_USER
+              value: "postgres"
+            - name: DB_PASSWORD
+              value: "Julio032020"
+
+
+
+
+
